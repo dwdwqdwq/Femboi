@@ -1,5 +1,5 @@
 {
   "imports": {
-    "@oak/oak": "https://deno.land/x/oak@v12.6.1/mod.ts"
+    "@oak/oak": "jsr:@oak/oak@17.1.4"
   }
 }
