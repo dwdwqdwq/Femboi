@@ -7,8 +7,7 @@ async function validateJSONRequest(ctx, toU8Array = true) {
     return [null, null];
   }
 
-  const requestBody = ctx.request.body();
-  const requestInfo = await requestBody.value;
+  const requestInfo = await ctx.request.body.json();
 
   let yandexBody = requestInfo.body;
   const yandexHeaders = requestInfo.headers;
